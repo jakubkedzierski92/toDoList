@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="css/list.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet" />
     <script src="js/list.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="form">
-            <form class="js-form">
-            <input class="js-addTask">
-            <button>dodaj zadanie</button>
-            </form>
-
-            <ul class="js-tasks"></ul>
+        <h1>Lista zadań</h1>
+        <div class="form__paragraph">
+            <h2>dodaj zadanie</h2>
         </div>
+      <div class="form">
+       
+        <form class="js-form">
+          <input class="form__input js-addTask" />
+          <button class="form__button">dodaj zadanie</button>
+        </form>
+       
+      </div>
+      <div class="list">
+        <h2>zadania do zrobienia</h2>
     </div>
-</body>
+    <div class="list__tasks">
+    <ul class="js-tasks"></ul>
+</div>
+    </div>
+  </body>
 </html>
