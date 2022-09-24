@@ -15,13 +15,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
+    
 
 }
 
 .form__button {
-    
+    background-color: teal;
+    color: white;
+    border: #ccc;
     margin: 10px;
     padding: 10px;
+    
 }
 
 .form__input {
@@ -29,6 +34,7 @@
     width: 100%;
     padding: 10px;
     margin-left: 10px;
+    outline-color: #ccc;
 }
 
 .form__paragraph {
@@ -37,6 +43,7 @@
     width: 100%;
     padding: 5px;
     margin-bottom: 2px;
+    background-color: white;
 }
 
 .list {
@@ -44,14 +51,21 @@
     max-width: 700px;
     width: 100%;
     padding: 5px;
-    margin: 2px 0px
+    margin: 2px 0px;
+    background-color: white;
 }
 
 .list__tasks {
-
+    background-color: white;
     border: 1px solid #ccc;
     max-width: 700px;
     width: 100%;
     padding: 5px;
-    margin: 2px 0px
+    margin: 2px 0px;
+    min-height: 55px;
+}
+
+
+body {
+    background-color: rgba(241, 239, 239, 0.909);
 }
