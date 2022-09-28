@@ -6,26 +6,12 @@
     render();
   };
 
-  const render = () => {
-    let htmlString = "";
-
-    for (const task of tasks) {
-      htmlString += `
-            <li ${task.done ? 'style="text-decoration: line-through"' : ""}>
-            ${task.content}
-            <button class="done js-done">zrobione?</button>
-            <button class="remove js-remove">usuń</button>
-            </li>
-            `;
-    }
-    document.querySelector(".js-tasks").innerHTML = htmlString;
-
-    const remoeveButtons = document.querySelectorAll(".js-remove");
+const bindEvents = () => {
+  const remoeveButtons = document.querySelectorAll(".js-remove");
 
     remoeveButtons.forEach((removeButton, index) => {
       removeButton.addEventListener("click", () => {
-        tasks.splice(index, 1);
-        render();
+        removeTask(index);
       });
     });
 
@@ -37,38 +23,69 @@
         render();
       });
     });
-  };
+}
+
   const addNewTask = (newTaskContent) => {
     tasks.push({
       content: newTaskContent,
     });
 
-  
     render();
-  }
+  };
+
+  const removeTask = (index) => {
+    tasks.splice(index, 1);
+    render();
+  };
+
+  const render = () => {
+    let htmlString = "";
+
+    for (const task of tasks) {
+      htmlString += `
+      <li class="list__item">
+                
+      <button class="list__button list__button--done js-done">
+      ${task.done ? "✔" : ""}
+      </button>
+      <span class="${task.done ? "list__item--done" : ""}">
+      ${task.content}
+      </span>
+      <button class=" list__button list__button--remove js-remove">🗑</button>
+      
+      </li>
+            `;
+    }
+    document.querySelector(".js-tasks").innerHTML = htmlString;
+
+    bindEvents();
+  };
 
   const onFormSubmit = (event) => {
     event.preventDefault();
 
-    const newTaskContent = document.querySelector(".js-addTask").value.trim();
-    console.log(newTaskContent);
+    const newTaskElement = document.querySelector(".js-addTask");
+    const  newTaskContent= newTaskElement.value.trim()
 
-    if (newTaskContent === "") {
-      return;
+    if (newTaskContent !== "") {
+      addNewTask(newTaskContent);
+      newTaskElement.value=""
     }
-    addNewTask(newTaskContent)
-    
+    newTaskElement.focus();
+  
   };
 
-  const init = () => {
+
+  function init() {
     render();
 
     const form = document.querySelector(".js-form");
 
-    form.addEventListener("submit", onFormSubmit)
-  };
-
-  
-
+    form.addEventListener("submit", onFormSubmit);
+  }
   init();
 }
+
+
+
+

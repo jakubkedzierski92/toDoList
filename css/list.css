@@ -1,3 +1,13 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+
 .container {
     max-width: 700px;
     width: 100%;
@@ -34,7 +44,8 @@
     width: 100%;
     padding: 10px;
     margin-left: 10px;
-    outline-color: #ccc;
+    outline-color: teal;
+    border: 1px solid #ccc;
 }
 
 .form__paragraph {
@@ -68,4 +79,40 @@
 
 body {
     background-color: rgba(241, 239, 239, 0.909);
+}
+
+.form__input:hover {
+    border: 1px solid teal;
+}
+
+
+.list__item {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 2px solid hsl(0, 0%, 90%);
+    column-gap: 10px;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.list__button {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: teal;
+    color: white;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}
+
+.list__button--done {
+    background-color: teal
+}
+
+.list__button--remove {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
 }
