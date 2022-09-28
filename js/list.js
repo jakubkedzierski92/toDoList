@@ -6,8 +6,8 @@
     render();
   };
 
-const bindEvents = () => {
-  const remoeveButtons = document.querySelectorAll(".js-remove");
+  const bindEvents = () => {
+    const remoeveButtons = document.querySelectorAll(".js-remove");
 
     remoeveButtons.forEach((removeButton, index) => {
       removeButton.addEventListener("click", () => {
@@ -23,7 +23,7 @@ const bindEvents = () => {
         render();
       });
     });
-}
+  };
 
   const addNewTask = (newTaskContent) => {
     tasks.push({
@@ -65,16 +65,14 @@ const bindEvents = () => {
     event.preventDefault();
 
     const newTaskElement = document.querySelector(".js-addTask");
-    const  newTaskContent= newTaskElement.value.trim()
+    const newTaskContent = newTaskElement.value.trim();
 
     if (newTaskContent !== "") {
       addNewTask(newTaskContent);
-      newTaskElement.value=""
+      newTaskElement.value = "";
     }
     newTaskElement.focus();
-  
   };
-
 
   function init() {
     render();
@@ -85,7 +83,3 @@ const bindEvents = () => {
   }
   init();
 }
-
-
-
-
