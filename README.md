@@ -19,4 +19,4 @@ Application adjusted to devices with narrower screen.
 
 ## application
 
-![direct link](https://jakubkedzierski92.github.io/toDoList/)
+[ToDoList.app](https://jakubkedzierski92.github.io/toDoList/)
