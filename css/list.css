@@ -7,13 +7,15 @@ html {
 ::before {
   box-sizing: inherit;
 }
-
+ 
 .container {
   max-width: 700px;
   width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  margin: auto;
+  
 }
 
 @media (max-width: 767px) {
@@ -141,6 +143,7 @@ body {
   padding: 5px;
   border-bottom: 2px solid hsl(0, 0%, 90%);
   column-gap: 10px;
+  word-break: break-all;
 }
 @media (max-width: 767px) {
   .list__item {
@@ -148,6 +151,7 @@ body {
     width: 90%;
     padding: 5px;
     align-items: flex-start;
+    word-break: break-all;
   }
 }
 
@@ -173,9 +177,15 @@ body {
   background-color: white;
 }
 
+.list__unordered {
+    margin: auto;
+    padding: 10px;
+}
+
 @media (max-width: 767px) {
   .list__unordered {
     padding: 10px;
-    max-width: 255px;
+    margin: 5px;
+    width: 100%;
   }
 }
