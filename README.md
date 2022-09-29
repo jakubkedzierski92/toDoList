@@ -15,4 +15,6 @@ Application adjusted to devices with narrower screen.
 
 ### short instructional .GIF
 
-[instructional video](https://media1.tenor.com/images/d1e27e4bd9461795579de3be9b124ef9/tenor.gif?itemid=26825530)
+[https://i.ibb.co/QKHmf3G/Zrzut-ekranu-2022-09-29-o-20-25-49.png](https://media1.tenor.com/images/d1e27e4bd9461795579de3be9b124ef9/tenor.gif?itemid=26825530)
+
+
