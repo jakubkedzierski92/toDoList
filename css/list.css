@@ -7,7 +7,7 @@ html {
 ::before {
   box-sizing: inherit;
 }
- 
+
 .container {
   max-width: 700px;
   width: 100%;
@@ -15,7 +15,6 @@ html {
   display: flex;
   flex-direction: column;
   margin: auto;
-  
 }
 
 @media (max-width: 767px) {
@@ -27,6 +26,12 @@ html {
 .form__header {
   text-align: left;
   margin: 10px;
+}
+
+@media (max-width: 767px) {
+  .form__header {
+    text-align: center;
+  }
 }
 
 .form {
@@ -43,6 +48,8 @@ html {
 @media (max-width: 767px) {
   .form {
     max-width: 90%;
+    margin: 0px;
+    padding: 5px;
   }
 }
 
@@ -57,6 +64,7 @@ html {
   .form__button {
     max-width: 229px;
     width: 100%;
+    margin: 5px;
   }
 }
 
@@ -71,7 +79,7 @@ html {
 
 @media (max-width: 767px) {
   .form__input {
-    margin-top: 5px;
+    margin: 5px;
     max-width: 229px;
     width: 100%;
   }
@@ -79,6 +87,12 @@ html {
 .list__header {
   text-align: left;
   margin: 10px;
+}
+
+@media (max-width: 767px) {
+  .list__header {
+    text-align: center;
+  }
 }
 .form__paragraph {
   border: 1px solid #ccc;
@@ -178,8 +192,8 @@ body {
 }
 
 .list__unordered {
-    margin: auto;
-    padding: 10px;
+  margin: auto;
+  padding: 10px;
 }
 
 @media (max-width: 767px) {
