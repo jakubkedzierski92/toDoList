@@ -15,6 +15,6 @@ Application adjusted to devices with narrower screen.
 
 ### short instructional .GIF
 
-[instructional gif](https://media1.tenor.com/images/d1e27e4bd9461795579de3be9b124ef9/tenor.gif?itemid=26825530)
+![instructional gif](https://media1.tenor.com/images/d1e27e4bd9461795579de3be9b124ef9/tenor.gif?itemid=26825530)
 
 [direct link](https://jakubkedzierski92.github.io/toDoList/)
