@@ -83,12 +83,12 @@
       tasks.length === 0
         ? ""
         : `
-  <button class = "js-hideDoneTasks">
+  <button class = "button__transition form__newButtons js-hideDoneTasks">
   ${hideDoneButtons ? "pokaż ukonczone" : "ukryj ukonczone"}
   </button>
   <button ${
     tasks.every(({ done }) => done === true) ? "disabled" : ""
-  } class = "js-allTasksDone"> Zaznacz wszystkie
+  } class = "button__transition form__newButtons js-allTasksDone"> Zaznacz wszystkie
   </button>
   `;
     hiddenButtons.innerHTML = htmlString;
