@@ -37,7 +37,10 @@
   };
 
   const removeTask = (index) => {
-    tasks = [...tasks.slice(0, index)];
+    tasks = [
+      ...tasks.slice(0, index),
+      ...tasks.slice(index +1)
+    ];
     render();
   };
 
@@ -59,7 +62,7 @@
 
     for (const task of tasks) {
       htmlString += `
-  <li class="list__item" ${
+  <li class="list__item  ${
     task.done && hideDoneButtons ? "list__item--hide": ""
   }">
             
