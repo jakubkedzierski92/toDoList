@@ -87,7 +87,7 @@
         ? ""
         : `
   <button class = "button__transition form__newButtons js-hideDoneTasks">
-  ${hideDoneButtons ? "pokaż ukonczone" : "ukryj ukonczone"}
+  ${hideDoneButtons ? "Pokaż ukonczone" : "Ukryj ukonczone"}
   </button>
   <button ${
     tasks.every(({ done }) => done === true) ? "disabled" : ""
