@@ -118,6 +118,9 @@ html {
 }
 
 .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border: 1px solid #ccc;
   max-width: 700px;
   width: 100%;
@@ -130,6 +133,8 @@ html {
 @media (max-width: 767px) {
   .list {
     max-width: 90%;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
@@ -219,8 +224,8 @@ body {
 
 .form__newButtons {
   display: flex;
-  background-color: teal;
-  color: white;
+  background-color: white;
+  color: teal;
   padding: 10px;
   outline: none;
   border: none;
@@ -233,7 +238,7 @@ body {
 }
 
 .form__newButtons:disabled {
-  background-color: grey;
+  
   color: black;
 }
 
@@ -242,13 +247,22 @@ body {
 }
 
 .button__transition:hover {
-  background-color: hsl(180, 100%, 30%);
+  color: hsl(180, 100%, 30%);
   transform: scale(1.1);
 }
 
 .test {
   display: flex;
-  width: 100%;
+  width: 40%;
   margin-right: 0px;
   justify-content: flex-end;
+}
+
+.test2 {
+  
+    display: flex;
+    width: 100%;
+    margin-right: 0px;
+    justify-content: flex-start;
+  
 }
