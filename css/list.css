@@ -224,7 +224,7 @@ body {
 
 .form__newButtons {
   display: flex;
-  background-color: white;
+  background-color: transparent;
   color: teal;
   padding: 10px;
   outline: none;
@@ -238,7 +238,6 @@ body {
 }
 
 .form__newButtons:disabled {
-  
   color: black;
 }
 
@@ -258,11 +257,15 @@ body {
   justify-content: flex-end;
 }
 
-.test2 {
-  
-    display: flex;
+@media (max-width: 767px) {
+  .test {
     width: 100%;
-    margin-right: 0px;
-    justify-content: flex-start;
-  
+  }
+}
+
+.test2 {
+  display: flex;
+  width: 100%;
+  margin-right: 0px;
+  justify-content: flex-start;
 }

@@ -91,7 +91,7 @@
   </button>
   <button ${
     tasks.every(({ done }) => done === true) ? "disabled" : ""
-  } class = "button__transition form__newButtons js-allTasksDone"> Zaznacz wszystkie
+  } class = "button__transition form__newButtons js-allTasksDone" > Zaznacz wszystkie
   </button>
   `;
     hiddenButtons.innerHTML = htmlString;
